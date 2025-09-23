@@ -1,0 +1,68 @@
+/* src/styles/NotificationsPanel.css */
+.notifications-panel {
+  background: rgba(40, 40, 40, 0.8);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  max-width: 350px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.panel-header h3 {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.panel-header .icon {
+  margin-right: 0.5rem;
+}
+
+.clear-btn {
+  background: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.clear-btn:hover {
+  background: #ff3333;
+}
+
+.notification-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+  margin-bottom: 0.4rem;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.notification-item p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.notification-item span {
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
