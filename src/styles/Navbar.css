@@ -1,0 +1,158 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #944db5;
+  color: #ffffff;
+}
+
+.navbar-logo h2 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: #f39c12;
+}
+
+/* Products Dropdown */
+.products-dropdown {
+  position: relative;
+}
+
+.products-dropdown .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 10px 0;
+  display: none;
+  flex-direction: column;
+  min-width: 150px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(-10px);
+  z-index: 100;
+}
+
+.products-dropdown:hover .dropdown-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.products-dropdown .dropdown-menu li {
+  padding: 8px 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.products-dropdown .dropdown-menu li:hover {
+  background-color: #f4f4f4;
+}
+
+.products-dropdown .dropdown-menu li a {
+  color: #2c3e50;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+/* Navbar Search */
+.navbar-search {
+  flex: 1;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-search input {
+  width: 60%;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* Navbar Authentication (Sign In / Profile) */
+.navbar-auth {
+  display: flex;
+  align-items: center;
+}
+
+.login-button {
+  background-color: #f39c12;
+  border: none;
+  padding: 8px 16px;
+  color: #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-button:hover {
+  background-color: #e67e22;
+}
+
+.user-profile {
+  position: relative;
+}
+
+.user-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: none;
+}
+
+.user-profile:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.profile-dropdown li:hover {
+  background-color: #f4f4f4;
+}

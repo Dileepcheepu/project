@@ -1,0 +1,41 @@
+/* src/styles/ProductSidebar.css */
+.product-sidebar {
+  position: sticky;
+  top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  margin-right: 20px;
+  height: fit-content;
+}
+
+.product-sidebar-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f39c12;
+}
+
+.product-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-list li {
+  margin-bottom: 10px;
+}
+
+.product-list li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.product-list li a:hover {
+  color: #f39c12;
+}

@@ -1,0 +1,64 @@
+.customers {
+  padding: 20px;
+  background-color: #c3c3dc;
+}
+
+.customers h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #139128;
+}
+
+.customer-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.customer-form input {
+  padding: 8px 12px;
+  border: 1px solid #2e6999;
+  border-radius: 5px;
+}
+
+.customer-form button {
+  padding: 8px 16px;
+  background-color: #e0e264;
+  color: #53a78b;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.customer-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.customer-card {
+  background-color: #cea0a0;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.customer-card h3 {
+  font-size: 18px;
+  margin: 0 0 8px 0;
+}
+
+.customer-card button {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.customer-card button:hover {
+  background-color: #c0392b;
+}

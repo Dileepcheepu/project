@@ -1,0 +1,102 @@
+/* src/styles/SignIn.css */
+
+/* Background Gradient and Centered Container */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #9ab535, #a2b5d7);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sign-In Card Styles */
+.signin-card {
+  background-color: rgba(207, 135, 19, 0.85); /* Slightly transparent white */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;  /* Increased width for larger text fields */
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Fade-in Animation for the Card */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading Style */
+.signin-card h2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #f7f5f5;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Input Fields Styling */
+.signin-card input {
+  width: 100%;
+  padding: 15px;  /* Larger padding for bigger text fields */
+  margin-bottom: 20px;  /* Space between fields */
+  border: 2px solid #b81c67;
+  border-radius: 8px;
+  font-size: 1.2rem;  /* Larger font size for better readability */
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input Focus Effects */
+.signin-card input:focus {
+  border-color: #17428e;
+  box-shadow: 0 0 8px rgba(75, 81, 90, 0.5);
+  outline: none;
+}
+
+/* Submit Button Styles */
+.signin-card button {
+  width: 100%;
+  padding: 15px;
+  background-color: #3ac25e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;  /* Larger font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+.signin-card button:hover {
+  background-color: #5e9269;
+  transform: translateY(-3px);
+}
+
+/* Additional Text Styling */
+.signin-card p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.signin-card a {
+  color: #4f8df7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Link Hover Effect */
+.signin-card a:hover {
+  color: #8b5cf6;
+  text-decoration: underline;
+}

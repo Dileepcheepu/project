@@ -1,0 +1,137 @@
+/* src/styles/ActiveDeals.css */
+.active-deals {
+  padding: 40px;
+  background: linear-gradient(135deg, #91cdd5, #a7ffeb);
+  border-radius: 15px;
+  max-width: 900px;
+  margin: 50px auto;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.active-deals:hover {
+  transform: translateY(-5px);
+}
+
+/* Form Styles */
+.deal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.deal-form input,
+.deal-form select {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #a05757;
+  border-radius: 8px;
+  transition: border-color 0.3s, background-color 0.3s;
+  background-color: #839e8b;
+}
+
+.deal-form input:focus,
+.deal-form select:focus {
+  border-color: #007bff;
+  background-color: #eef7ff;
+}
+
+.deal-form button {
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.deal-form button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Deal List Styles (Two Side-by-Side) */
+.deal-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.deal-card {
+  background: #a2a249;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  transition: transform 0.3s;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+}
+
+.deal-card:hover {
+  transform: translateY(-8px);
+}
+
+.deal-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.deal-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.deal-card .deal-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deal-card button {
+  background-color: #e74c3c;
+  color: #e5cccc;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.deal-card button:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .deal-list {
+    flex-direction: column;
+  }
+
+  .deal-card {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .deal-form {
+    gap: 10px;
+  }
+
+  .deal-card {
+    padding: 12px;
+  }
+
+  .deal-card button {
+    padding: 8px 12px;
+  }
+}

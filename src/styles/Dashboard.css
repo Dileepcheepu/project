@@ -1,0 +1,66 @@
+/* src/styles/Dashboard.css */
+.dashboard {
+  background: url('../assets/dashboard-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  padding: 40px 20px;
+  border-radius: 12px;
+  max-width: 100%;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f39c12;
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.stats-card {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.stats-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.stats-card p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.stats-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.stats-card.clickable {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.stats-card.clickable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
