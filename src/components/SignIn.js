@@ -11,7 +11,7 @@ const SignIn = () => {
     e.preventDefault();
 
     // Simulated Sign In Logic
-    if (email === 'sarankumar.yarabarla@gmail.com' && password === 'saran') {
+    if (email === 'cheepudileep@gmail.com' && password === 'project') {
       localStorage.setItem('isLoggedIn', 'true');
       navigate('/profile');
     } else {
