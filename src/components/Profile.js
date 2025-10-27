@@ -4,9 +4,9 @@ import '../styles/Profile.css';
 const Profile = () => {
   // Sample user data
   const initialUserData = {
-    name: 'saran',
-    email: 'sarankumar.yarabarla@gmail.com',
-    phone: '9049669872',
+    name: 'CH.DILEEP MANI KUMAR',
+    email: 'cheepudileep@gmail.com',
+    phone: '8886166184',
     address: 'kl university, vijayawada,vadeswaram',
     company: 'CRM System.'
   };
